@@ -1,6 +1,6 @@
 
 
-export default function SignInPage() {
+export function SignInPage() {
   return (
     <div>SignInPage</div>
   )

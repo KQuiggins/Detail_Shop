@@ -2,6 +2,7 @@ import { FC, ReactElement } from "react";
 import { NavLink } from "react-router-dom";
 import { Logo } from "./Logo";
 
+
 const Header: FC = (): ReactElement => {
   return (
     <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
@@ -10,7 +11,7 @@ const Header: FC = (): ReactElement => {
         <ul className="flex space-x-4">
           <li>
             <NavLink
-              to=""
+              to="/sign-in"
               className={({ isActive }) =>
                 `text-white hover:text-gray-300 ${
                   isActive ? "border-b-2 border-white" : ""
@@ -22,7 +23,7 @@ const Header: FC = (): ReactElement => {
           </li>
           <li>
             <NavLink
-              to=""
+              to="/sign-up"
               className={({ isActive }) =>
                 `text-white hover:text-gray-300 ${
                   isActive ? "border-b-2 border-white" : ""
@@ -34,7 +35,7 @@ const Header: FC = (): ReactElement => {
           </li>
           <li>
             <NavLink
-              to=""
+              to="/about"
               className={({ isActive }) =>
                 `text-white hover:text-gray-300 ${
                   isActive ? "border-b-2 border-white" : ""

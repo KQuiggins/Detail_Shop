@@ -1,6 +1,6 @@
 
 
-export default function ErrorPage() {
+export function ErrorPage() {
   return (
     <div>ErrorPage</div>
   )
